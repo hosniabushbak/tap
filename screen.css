@@ -1,0 +1,49 @@
+@media only screen and (max-width:1140px) {
+	header .d-grid {
+		display: block;
+	}
+	header .myPhoto img {
+		height: 50%;
+		width: 50%;
+	}
+	header .topNav {
+		display: none;
+	}
+	header .topNavResponsive {
+		display: block;
+	}
+}
+
+@media only screen and (max-width:900px) {
+	.container {
+		padding: 0 5rem;
+	}
+	header .myName {
+		font-size: 2rem;
+	}
+}
+
+@media only screen and (max-width:600px) {
+	header .myPhoto img {
+		height: 100%;
+		width: 100%;
+	}
+	header .myName {
+		font-size: 1.7rem;
+	}
+	header {
+		min-height: 75vh;
+	}
+	.myExperties {
+		grid-template-columns: 1fr !important;
+	}
+	.myExperties .col {
+		margin-top: 1rem;
+	}
+	.sectionHeader h1 {
+		text-align: center;
+	}
+	.myWorks {
+		grid-template-columns: 1fr;
+	}
+}

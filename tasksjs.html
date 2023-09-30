@@ -1,0 +1,23 @@
+<script type="text/javascript">
+    function sum(num, reach) {
+    let numM = {};
+
+    for (let i = 0; i < num.length; i++) {
+        const comp = reach - num[i];
+
+        if (numM[comp] !== undefined) {
+            return [numM[comp], i];
+        }
+
+        numM[num[i]] = i;
+    }
+
+    return [];
+}
+
+
+const num = [2, 7, 11, 15];
+const reach = 9;
+const result = sum(num, reach);
+console.log(result);
+</script>
